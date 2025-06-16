@@ -3,86 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DLC GI INC.</title>
+  <title>DLCGI SHOP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f7fa;
-      color: #333;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #1e293b; line-height: 1.6; }
+    header, footer { background: #1e3a8a; color: white; text-align: center; padding: 20px; }
+    nav a { color: #facc15; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1573164574396-9d9a0c74f0b3?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center;
     }
-    header {
-      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
+    .hero h1 { font-size: 46px; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .section-title { font-size: 28px; margin-bottom: 20px; color: #1e3a8a; text-align: center; }
+    .grid { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      margin-bottom: 40px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    }
-    .section:nth-child(even) {
-      background: url('https://images.unsplash.com/photo-1581092580502-5c4d61c3b3ed?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      color: white;
-    }
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    .section p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 14px;
-    }
+    .card img { width: 100%; border-radius: 6px; margin-bottom: 10px; }
+    a { color: #2563eb; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>DLC GI INC.</h1>
-    <p>Professional & Committed</p>
-  </header>
+<header>
+  <h1>DLCGI SHOP</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#sectors">Sectors</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <div class="section">
-    <h2>Who We Are</h2>
-    <p>DLC GI INC. is a forward-thinking American corporation built on values of growth, innovation, and professionalism.</p>
+<div class="hero">
+  <h1>Innovative Solutions, Inspired by Growth</h1>
+</div>
+
+<section id="about">
+  <h2 class="section-title">Who We Are</h2>
+  <p>DLCGI SHOP is a multifaceted company with a forward-thinking approach to service and innovation. Based in Germany, we bring together smart strategies, resourceful teams, and a customer-first mindset. Whether in logistics, digital transformation, or commerce, we pride ourselves on seamless integration and delivery of results.</p>
+</section>
+
+<section id="sectors">
+  <h2 class="section-title">Main Sectors</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🔧 Industrial Services</h3>
+      <p>We support B2B operations with efficient industrial service models tailored for sustainable impact.</p>
+    </div>
+    <div class="card">
+      <h3>🖥️ E-Commerce</h3>
+      <p>From logistics to digital storefronts, our e-commerce expertise helps brands thrive online globally.</p>
+    </div>
+    <div class="card">
+      <h3>🌱 Green Technology</h3>
+      <p>We believe in future-ready solutions—green tech and renewable products are part of our long-term vision.</p>
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>What We Do</h2>
-    <p>Our company operates with a clear focus on delivering value in every aspect of our services, ensuring long-term success and satisfaction.</p>
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1573164574396-9d9a0c74f0b3?auto=format&fit=crop&w=600&q=80" alt="Operations"/>
+      <p>Inside our operational hub.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b2?auto=format&fit=crop&w=600&q=80" alt="Tech Setup"/>
+      <p>Tech systems powering our business.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&w=600&q=80" alt="Team"/>
+      <p>Team collaboration in action.</p>
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>Our Vision</h2>
-    <p>We aim to redefine standards in our industry by continuously improving and adapting to modern market needs and technological changes.</p>
+<section id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <div class="card">
+    <p><strong>Email:</strong> <a href="mailto:contact@dlcgi.shop">contact@dlcgi.shop</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+15737981416">+1 5737981416</a></p>
+    <p><strong>Location:</strong> Germany</p>
   </div>
+</section>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:contact@dlcgi.shop" style="color:white;">contact@dlcgi.shop</a></p>
-    <p>Phone: <a href="tel:+15737981416" style="color:white;">+1 573-798-1416</a></p>
-    <p>Website: <a href="https://www.dlcgi.shop" style="color:white;">www.dlcgi.shop</a></p>
-  </div>
-
-  <footer>
-    &copy; 2025 DLC GI INC. – All rights reserved.
-  </footer>
+<footer>
+  <p>&copy; 2025 DLCGI SHOP. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
